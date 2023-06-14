@@ -3,8 +3,12 @@ git init
 git remote add origin 복사해온깃헙레포url
 git remote -v
 git pull origin main
-git clone 복사해온깃헙레포url(통으로 복제함)
 
+git push -u 원격저장소주소 올릴 로컬브랜치명(로컬 -> 원격저장소 업로드)
+(-u를 추가하면 주소 기억하게됨. 그래서 그 후로는 git push만 해도 올라감) 
+
+git remote add 변수명 원격저장소주소(주소.git, 변수명은 관습적으로 origin 으로 많이 씀)
+git pull 원격저장소주소 브랜치명(원격저장소 -> 로컬저장소)
 
 
 git branch 브랜치 (브랜치 생성)
@@ -26,11 +30,6 @@ git restore --staged 파일명
 git revert 커밋아이디(commit 취소하는 법)
 git reset --hard 커밋아이디(과거로 모든걸 되돌리기)
 
-git push -u 원격저장소주소 올릴 로컬브랜치명(로컬 -> 원격저장소 업로드)
-(-u를 추가하면 주소 기억하게됨. 그래서 그 후로는 git push만 해도 올라감) 
-
-git remote add 변수명 원격저장소주소(주소.git, 변수명은 관습적으로 origin 으로 많이 씀)
-git pull 원격저장소주소 브랜치명(원격저장소 -> 로컬저장소)
 
 git stash (임시공간에 잠시 저장)
 git stash list (목록을 보여준다)
