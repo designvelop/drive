@@ -1,0 +1,49 @@
+깃생성해서 github에서 가져오기
+git init
+git remote add origin 복사해온깃헙레포url
+git remote -v
+git pull origin main
+
+git branch 브랜치 (브랜치 생성)
+git switch 브랜치 (브랜치 이동)
+git merge 브랜치B (현재 브랜치에서 브랜치B 머지)
+머지 중에 충돌나면 소스 수정한 다음 현재브랜치에서 git add . git commit 하면 됨
+
+git branch -d 브랜치 (merge 완료된 브랜치 삭제)
+git branch -D 브랜치 (merge 안된 브랜치 삭제)
+
+
+
+git restore 파일명 (파일 복구 하는 법)
+git restore --source 커밋아이디 파일명(특정 커밋시점으로 파일 복구하는 법)
+
+git restore --staged 파일명
+
+git revert 커밋아이디(commit 취소하는 법)
+git reset --hard 커밋아이디(과거로 모든걸 되돌리기)
+
+git push -u 원격저장소주소 올릴 로컬브랜치명(로컬 -> 원격저장소 업로드)
+(-u를 추가하면 주소 기억하게됨. 그래서 그 후로는 git push만 해도 올라감) 
+
+git remote add 변수명 원격저장소주소(주소.git, 변수명은 관습적으로 origin 으로 많이 씀)
+git pull 원격저장소주소 브랜치명(원격저장소 -> 로컬저장소)
+
+git stash (임시공간에 잠시 저장)
+git stash list (목록을 보여준다)
+git stash save "메모적을수 있다"
+
+
+
+
+
+
+
+
+Git Flow 
+깃플로우 전략은 소프트웨어의 소스코드를 관리하고 출시하기 위한 브랜치 관리 전략 
+
+Master(Main) 제품출시
+Develop 다음버전 개발
+Feature 기능 개발
+Release 출시준비
+Hotfix 출시버전에서 버그 수정
