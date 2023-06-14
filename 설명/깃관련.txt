@@ -3,7 +3,6 @@ git init
 git remote add origin 복사해온깃헙레포url
 git remote -v
 git pull origin main
-git clone 주소.git (통으로 복제해옴)
 
 
 git branch 브랜치 (브랜치 생성)
