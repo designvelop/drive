@@ -6,6 +6,7 @@ git pull origin main
 git clone 복사해온깃헙레포url(통으로 복제함)
 
 
+
 git branch 브랜치 (브랜치 생성)
 git branch -M main(기본브랜치 이름이 main으로 변경됨)
 git switch 브랜치 (브랜치 이동)
