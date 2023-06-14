@@ -3,6 +3,9 @@ git init
 git remote add origin 복사해온깃헙레포url
 git remote -v
 git pull origin main
+git remote add 변수명 원격저장소주소(주소.git, 변수명은 관습적으로 origin 으로 많이 씀)
+git pull 원격저장소주소 브랜치명(원격저장소 -> 로컬저장소)
+
 
 git branch 브랜치 (브랜치 생성)
 git switch 브랜치 (브랜치 이동)
