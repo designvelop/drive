@@ -3,11 +3,10 @@ git init
 git remote add origin 복사해온깃헙레포url
 git remote -v
 git pull origin main
-git remote add 변수명 원격저장소주소(주소.git, 변수명은 관습적으로 origin 으로 많이 씀)
-git pull 원격저장소주소 브랜치명(원격저장소 -> 로컬저장소)
 
 
 git branch 브랜치 (브랜치 생성)
+git branch -M main(기본브랜치 이름이 main으로 변경됨)
 git switch 브랜치 (브랜치 이동)
 git merge 브랜치B (현재 브랜치에서 브랜치B 머지)
 머지 중에 충돌나면 소스 수정한 다음 현재브랜치에서 git add . git commit 하면 됨
