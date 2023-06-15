@@ -2,9 +2,9 @@
 F2::
 Loop
 {
-    Click, 1920 0
+    Click, 0 900
     sleep, 860000
-    Click, 1920 0
+    Click, 0 900
     break
 }
 return
